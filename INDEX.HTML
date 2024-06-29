@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+</head>
+<body>
+    <UL>
+    <a href="index2.html">TWO</a>
+    <a href="index3.html">THREE</a>
+    <a href="index4.html">FOUR</a>
+    <a href="five.html">FIVE</a>
+    <a href="six.html">SIX</a>
+    <a href="guess.html">SEVEN</a>
+    <a href="eight.html">EIGHT</a>
+    <a href="nine.html">NINE</a>
+    <a href="ten.html">TEN</a>
+    <a href="elev.html">ELEVEN</a>
+</UL>
+    <h1>Karachi</h1>
+    
+    <script>
+        var cityName = prompt("Enter city name:");
+        var welcomeMessage = document.createElement("p");
+
+        if (cityName !== null) {
+            if (cityName.toLowerCase() === "karachi") {
+                welcomeMessage.textContent = "Welcome to the city of lights!";
+            } else {
+                welcomeMessage.textContent = "You are not in Karachi.";
+            }
+            document.body.appendChild(welcomeMessage);
+        }
+    </script>
+</body>
+</html>
